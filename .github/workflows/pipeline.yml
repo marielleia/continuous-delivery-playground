@@ -1,13 +1,5 @@
 name: CI/CD Pipeline
 
-defaults:
-  run:
-    working-directory: modern-web-app
-
-env:
-  NODE_VERSION: "14.17"
-
-
 on: push
 jobs:
   hello-world:
@@ -15,6 +7,15 @@ jobs:
     steps:
       - name: Hello World step
         run: echo "Hello World!"
+
+defaults:
+  run:
+    working-directory: modern-web-app
+
+env:
+  NODE_VERSION: "14.17"
+
+jobs: 
   test:
     name: Test
     runs-on: ubuntu-latest
