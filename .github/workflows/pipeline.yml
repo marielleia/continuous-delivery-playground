@@ -15,8 +15,6 @@ defaults:
 env:
   NODE_VERSION: "14.17"
 
-
-jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
